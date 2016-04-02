@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cailly Gilles TP</title>
+	<meta name="author" content="Gilles Cailly" />
+	<meta name="description" content="Entreprise de terrassement" />
+	<meta name="keywords"  content="tp,terrassement,assainissement,location,chauffeur" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
+
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script> 
+
+
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<script type="text/javascript" src="node_modules/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="firstPage"><a href="#firstPage">Accueil</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Ce qu'on fait ?</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">Qui on est ?</a></li>
+		<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<h1>CAILLY GILLES TP</h1>
+			<p><i>Terrassement et assainissement</i></p>
+			<img src="img/mecalac.png" alt="fullPage" />
+			<p>
+				<a class="button" href="#secondPage">En savoir plus</a>
+			</p>
+		</div>
+		<div class="section" id="section1">
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example6.jpg" alt="" />
+				</div>				
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example11.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example7.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example9.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example13.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example14.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example15.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example16.jpg" alt="" />
+				</div>
+			</div>
+		    <div class="slide">
+				<div class="intro">
+					<img class="imageExample" src="img/example12.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Qui on est ?</h1>
+				<p>Deux chauffeurs expérimentés !</p>
+				<img src="img/avatar1.png" alt="" />
+				<img src="img/avatar2.png" alt="" />
+				<p><b>Gilles</b> a fondé l'entreprise en 2048 et s'il comptait combien de temps il a passé à bord de son engin il arriverait pas loin des 100000 heures !</p>
+				<p><b>Frédéric</b> a rejoint l'entreprise il y a X ans et lui n'arrive qu'à 10000 heures... mais il est persévérant ;-)</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<h1>Comment peut on vous aider ?</h1>
+				<p>
+					Dites le nous par téléphone : <b>02 31 78 25 36</b>
+				</p>
+				<p>
+					ou
+				</p>
+				<p>
+					Remplissez ce formulaire :
+				</p>
+				<form>
+					<p>
+						<label>Votre adresse email : </label>
+						<input></input>
+					</p>
+					<p>
+						<label>Message : </label>
+						<textarea></textarea>
+					</p>
+					<a class="button" href="#secondPage">Envoyer</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
