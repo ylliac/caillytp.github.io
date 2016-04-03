@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cailly Gilles TP</title>
+	<meta name="author" content="Gilles Cailly" />
+	<meta name="description" content="Entreprise de terrassement" />
+	<meta name="keywords"  content="tp,terrassement,assainissement,location,chauffeur" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="libs/fullpage/jquery.fullPage.css" />
+
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<script src="libs/fullpage/vendors/jquery.easings.min.js"></script> 
+
+
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<script type="text/javascript" src="libs/fullpage/vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="libs/fullpage/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#7BAABE'],
+				anchors: ['firstPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="firstPage"><a href="/#firstPage">Accueil</a></li>
+		<li data-menuanchor="secondPage"><a href="/#secondPage">Ce qu'on fait ?</a></li>
+		<li data-menuanchor="3rdPage"><a href="/#3rdPage">Qui on est ?</a></li>
+		<li data-menuanchor="4thpage"><a href="/#4thpage">Contact</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<h1>Vous êtes perdu ?</h1>
+			<p><i>Cliquez sur le bouton ci dessous</i></p>
+			<img src="img/mecalac.png" alt="fullPage" />
+			<p>
+				<a class="button" href="/#secondPage">Retour au site</a>
+			</p>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
