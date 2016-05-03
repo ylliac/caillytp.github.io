@@ -166,16 +166,14 @@
 				<p>
 					Remplissez ce formulaire :
 				</p>
-				<form>
-					<p>
-						<label>Votre adresse email : </label>
-						<input placeholder="ex: jean.dupond@orange.fr"></input>
-					</p>
-					<p>
-						<label>Message : </label>
-						<textarea></textarea>
-					</p>
-					<a class="button" href="#secondPage">Envoyer</a>
+
+				<form action="https://formspree.io/ylliac@hotmail.com" method="POST">
+					<input type="hidden" name="_subject" value="Message provenant de CaillyTP.com" />
+					<input type="hidden" name="_cc" value="ylliac14+caillytp@gmail.com" />
+					<input type="text" name="_replyto" placeholder="Votre email" />
+					<input type="text" name="message">
+					<input type="text" name="_gotcha" style="display:none" />
+				    <input type="submit" value="Send">
 				</form>
 			</div>
 		</div>
