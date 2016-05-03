@@ -63,6 +63,7 @@
 	<script type="text/javascript" src="libs/fullpage/vendors/jquery.slimscroll.min.js"></script>
 
 	<script type="text/javascript" src="libs/fullpage/jquery.fullPage.js"></script>
+	<script src="formspree.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -167,13 +168,16 @@
 					Remplissez ce formulaire :
 				</p>
 
-				<form action="https://formspree.io/ylliac@hotmail.com" method="POST">
+				<form id="contact-form" action="https://formspree.io/ylliac@hotmail.com" method="POST">
+					<input type="text" name="name" placeholder="Votre nom" required>
+					<input type="email" name="_replyto" placeholder="Votre email" required/>
+					<textarea name="Message" cols="30" rows="6" placeholder="Votre message" required></textarea>
+
 					<input type="hidden" name="_subject" value="Message provenant de CaillyTP.com" />
 					<input type="hidden" name="_cc" value="ylliac14+caillytp@gmail.com" />
 					<input type="hidden" name="_next" value="//www.caillytp.com" />
-					<input type="text" name="_replyto" placeholder="Votre email" />
-					<input type="text" name="message">
 					<input type="text" name="_gotcha" style="display:none" />
+
 				    <input type="submit" value="Send">
 				</form>
 			</div>
