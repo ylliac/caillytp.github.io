@@ -248,6 +248,15 @@ p{
 	height: 80vh;
 }
 
+form {
+	margin-top: 20px;
+    display: inline-block;
+}
+
+.contact p{
+	margin-top: 20px;
+}
+
 
 
 /* Demos Menu
