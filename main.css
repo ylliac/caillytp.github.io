@@ -257,6 +257,15 @@ form {
 	margin-top: 20px;
 }
 
+#contact-form fieldset input,
+#contact-form fieldset textarea{
+	width: 400px;
+}
+
+.avatars{
+	padding: 30px;
+}
+
 
 
 /* Demos Menu
