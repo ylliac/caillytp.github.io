@@ -59,10 +59,10 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 4em;
 }
 p{
-	font-size: 2em;
+	font-size: 1.5em;
 }
 .intro p{
 	width: 50%;
@@ -245,7 +245,7 @@ p{
 }
 
 .imageExample{
-	height: 80vh;
+	height: 70vh;
 }
 
 form {
@@ -262,8 +262,13 @@ form {
 	width: 400px;
 }
 
+/* Avatars */
+
 .avatars{
 	padding: 30px;
+}
+.avatars img{	
+	max-height: 30vh;
 }
 
 
@@ -276,3 +281,18 @@ form {
 	right:10px;
 	z-index: 999;
  }
+
+ /*Logo*/
+ .logo{
+ 	max-height: 50%
+ }
+
+ .intro .bio p{
+ 	font-size: 1.2em;
+ 	margin-bottom: 1em;
+ }
+
+ #section3 p{
+ 	font-size: 1.3em;
+ }
+
